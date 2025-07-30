@@ -1,29 +1,141 @@
+/* Header Component Styles - header/header.css */
+
 .header-container {
-    background: rgba(255, 229, 236, 0.95); 
+    background: rgba(234, 157, 157, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(255, 179, 191, 0.3); 
-    border: 1px solid rgba(250, 195, 204, 0.4);
+    box-shadow: 0 10px 30px rgba(234, 192, 192, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .app-title {
-    color: #6D3D47; 
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #a56572;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.title-icon {
+    font-size: 2.2rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 .app-subtitle {
-    color: #A05A66;
+    font-size: 1.1rem;
+    color: #ecacd9;
+    font-weight: 400;
+}
+
+.header-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .stat-item {
-    background: linear-gradient(145deg, #FFD6D6, #FFEEF1);
+    text-align: center;
+    padding: 15px 20px;
+    background: linear-gradient(145deg, #f7fafc, #edf2f7);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(228, 218, 218, 0.05);
+    transition: all 0.3s ease;
+    min-width: 80px;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(179, 163, 163, 0.1);
 }
 
 .stat-number {
-    color: #FF8FAB; 
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a4678;
+    margin-bottom: 5px;
 }
 
 .stat-label {
-    color: #A05A66;
+    font-size: 0.9rem;
+    color: #83a1cf;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Design for Header */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .app-title {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .title-icon {
+        font-size: 1.8rem;
+    }
+    
+    .app-subtitle {
+        font-size: 1rem;
+    }
+    
+    .header-stats {
+        gap: 20px;
+    }
+    
+    .stat-item {
+        padding: 12px 15px;
+        min-width: 70px;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 1.8rem;
+    }
+    
+    .header-stats {
+        gap: 15px;
+    }
+    
+    .stat-item {
+        padding: 10px 12px;
+    }
 }
