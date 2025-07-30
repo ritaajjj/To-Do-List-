@@ -1,0 +1,150 @@
+<!-- Home Component HTML Template - home/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Component Template</title>
+</head>
+<body>
+    <!-- Main Content Container -->
+    <div class="main-container">
+        <!-- Task Input Section -->
+        <section class="task-input-section">
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    class="task-input" 
+                    placeholder="Enter a new task..."
+                    maxlength="200"
+                    autocomplete="off"
+                >
+                <button id="add-task-btn" class="add-btn">
+                    ➕ Add Task
+                </button>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">
+                    📋 All Tasks
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    ⏳ Active
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    ✅ Completed
+                </button>
+            </div>
+        </section>
+        
+        <!-- Task List Section -->
+        <section class="task-list-section">
+            <div class="tasks-header">
+                <h2 class="tasks-title">
+                    📝 My Tasks
+                </h2>
+                <button id="clear-completed-btn" class="clear-completed-btn" disabled>
+                    🗑️ Clear Completed
+                </button>
+            </div>
+            
+            <!-- Task List Container -->
+            <ul id="task-list" class="task-list">
+                <!-- Example Task Item (will be replaced by JavaScript) -->
+                <li class="task-item" data-task-id="example">
+                    <div class="task-content">
+                        <input 
+                            type="checkbox" 
+                            class="task-checkbox"
+                        >
+                        <span class="task-text">
+                            Example task - this will be replaced by JavaScript
+                        </span>
+                    </div>
+                    <div class="task-actions">
+                        <button class="edit-btn">
+                            ✏️ Edit
+                        </button>
+                        <button class="delete-btn">
+                            🗑️ Delete
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <span class="empty-state-icon">📝</span>
+                <div class="empty-state-text">No tasks yet!</div>
+                <div class="empty-state-subtext">Add your first task above to get started</div>
+            </div>
+            
+            <!-- Loading State (optional) -->
+            <div id="loading-state" class="loading-state" style="display: none;">
+                <span class="loading-icon">⏳</span>
+                <div class="loading-text">Loading your tasks...</div>
+            </div>
+        </section>
+        
+        <!-- Task Statistics Section (optional) -->
+        <section class="task-stats-section" style="margin-top: 30px;">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-icon">📊</span>
+                    <div class="stat-info">
+                        <span class="stat-number" id="home-total-tasks">0</span>
+                        <span class="stat-label">Total Tasks</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">⚡</span>
+                    <div class="stat-info">
+                        <span class="stat-number" id="home-productivity">0%</span>
+                        <span class="stat-label">Completed</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-icon">🎯</span>
+                    <div class="stat-info">
+                        <span class="stat-number" id="home-active-tasks">0</span>
+                        <span class="stat-label">Remaining</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quick Actions Section (optional) -->
+        <section class="quick-actions-section" style="margin-top: 20px;">
+            <div class="quick-actions-container">
+                <button class="quick-action-btn" id="select-all-btn">
+                    ☑️ Select All
+                </button>
+                <button class="quick-action-btn" id="deselect-all-btn">
+                    ◻️ Deselect All
+                </button>
+                <button class="quick-action-btn" id="export-tasks-btn">
+                    📤 Export Tasks
+                </button>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Task Template (hidden, used by JavaScript) -->
+    <template id="task-template">
+        <li class="task-item" data-task-id="">
+            <div class="task-content">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text"></span>
+            </div>
+            <div class="task-actions">
+                <button class="edit-btn">✏️ Edit</button>
+                <button class="delete-btn">🗑️ Delete</button>
+            </div>
+        </li>
+    </template>
+</body>
+</html>

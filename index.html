@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    
+ 
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./home/home.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+    
+    <!-- Global Styles -->
+    <style>
+        /* Global Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Component -->
+        <header id="header-component"></header>
+        
+        <!-- Main Content -->
+        <main id="main-content"></main>
+        
+        <!-- Footer Component -->
+        <footer id="footer-component"></footer>
+    </div>
+
+    <!-- Component JavaScript Files -->
+    <script src="./header/header.js"></script>
+    <script src="./home/home.js"></script>
+    <script src="./footer/footer.js"></script>
+    
+    <!-- Main App Initialization -->
+    <script>
+        // Initialize the app when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 To-Do App Loading...');
+            
+            // Load all components
+            loadHeader();
+            loadHome();
+            loadFooter();
+            
+            console.log('✅ To-Do App Loaded Successfully!');
+        });
+    </script>
+</body>
+</html>
