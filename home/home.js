@@ -108,12 +108,12 @@ function setupEventListeners() {
         });
     });
     
-    // Clear completed button
+    
     const clearBtn = document.getElementById('clear-completed-btn');
     clearBtn.addEventListener('click', clearCompletedTasks);
 }
 
-// Load tasks from localStorage
+
 function loadTasksFromStorage() {
     const savedTasks = localStorage.getItem('todoTasks');
     if (savedTasks) {
@@ -127,18 +127,18 @@ function loadTasksFromStorage() {
 function saveTasksToStorage() {
     localStorage.setItem('todoTasks', JSON.stringify(tasks));
     
-    // Update header stats after saving
+    
     if (window.headerFunctions) {
         window.headerFunctions.updateStats();
     }
 }
 
-// Add a new task
+
 function addTask() {
     const taskInput = document.getElementById('task-input');
     const taskText = taskInput.value.trim();
     
-    // Validate input
+   
     if (!taskText) {
         alert('Please enter a task!');
         taskInput.focus();
@@ -152,7 +152,7 @@ function addTask() {
     
     // Create new task object
     const newTask = {
-        id: Date.now(), // Simple ID generation
+        id: Date.now(), 
         text: taskText,
         completed: false,
         createdAt: new Date().toISOString()
@@ -229,11 +229,10 @@ function deleteTask(taskId) {
     }
 }
 
-// Set filter
+
 function setFilter(filter) {
     currentFilter = filter;
-    
-    // Update active filter button
+   
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => {
         btn.classList.toggle('active', btn.dataset.filter === filter);
@@ -286,21 +285,21 @@ function renderTasks() {
         emptyState.style.display = 'none';
     }
     
-    // Update clear completed button
+    
     const completedCount = tasks.filter(t => t.completed).length;
     clearBtn.disabled = completedCount === 0;
     clearBtn.textContent = `🗑️ Clear Completed (${completedCount})`;
     
-    // Clear existing tasks
+
     taskList.innerHTML = '';
     
-    // Render each task
+ 
     filteredTasks.forEach((task, index) => {
         const taskElement = createTaskElement(task, index);
         taskList.appendChild(taskElement);
     });
     
-    // Set up drag and drop
+    
     setupDragAndDrop();
 }
 
@@ -334,7 +333,7 @@ function createTaskElement(task, index) {
     return li;
 }
 
-// Escape HTML to prevent XSS
+
 function escapeHtml(text) {
     const map = {
         '&': '&amp;',
@@ -346,7 +345,7 @@ function escapeHtml(text) {
     return text.replace(/[&<>"']/g, function(m) { return map[m]; });
 }
 
-// Set up drag and drop functionality
+
 function setupDragAndDrop() {
     const taskItems = document.querySelectorAll('.task-item');
     
@@ -382,7 +381,7 @@ function setupDragAndDrop() {
     });
 }
 
-// Get element after which to insert dragged element
+
 function getDragAfterElement(container, y) {
     const draggableElements = [...container.querySelectorAll('.task-item:not(.dragging)')];
     
@@ -398,7 +397,7 @@ function getDragAfterElement(container, y) {
     }, { offset: Number.NEGATIVE_INFINITY }).element;
 }
 
-// Reorder tasks based on DOM order
+
 function reorderTasks() {
     const taskElements = document.querySelectorAll('.task-item');
     const newOrder = [];
@@ -415,7 +414,7 @@ function reorderTasks() {
     saveTasksToStorage();
 }
 
-// Export functions for global access
+
 window.toggleTask = toggleTask;
 window.editTask = editTask;
 window.deleteTask = deleteTask;

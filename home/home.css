@@ -10,7 +10,7 @@
 
 .task-input:focus {
     border-color: #FF8FAB;
-    box-shadow: 0 0 0 3px rgba(255, 143, 171, 0.3);
+    box-shadow: 0 0 0 3px rgba(207, 106, 131, 0.3);
 }
 
 .add-btn {

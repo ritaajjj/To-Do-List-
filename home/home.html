@@ -7,9 +7,9 @@
     <title>Home Component Template</title>
 </head>
 <body>
-    <!-- Main Content Container -->
+    
     <div class="main-container">
-        <!-- Task Input Section -->
+    
         <section class="task-input-section">
             <div class="input-group">
                 <input 
@@ -25,7 +25,7 @@
                 </button>
             </div>
             
-            <!-- Filter Buttons -->
+        
             <div class="filter-section">
                 <button class="filter-btn active" data-filter="all">
                     📋 All Tasks
@@ -39,7 +39,7 @@
             </div>
         </section>
         
-        <!-- Task List Section -->
+        
         <section class="task-list-section">
             <div class="tasks-header">
                 <h2 class="tasks-title">
@@ -50,9 +50,9 @@
                 </button>
             </div>
             
-            <!-- Task List Container -->
+       
             <ul id="task-list" class="task-list">
-                <!-- Example Task Item (will be replaced by JavaScript) -->
+              
                 <li class="task-item" data-task-id="example">
                     <div class="task-content">
                         <input 
@@ -74,14 +74,14 @@
                 </li>
             </ul>
             
-            <!-- Empty State -->
+            
             <div id="empty-state" class="empty-state" style="display: none;">
                 <span class="empty-state-icon">📝</span>
                 <div class="empty-state-text">No tasks yet!</div>
                 <div class="empty-state-subtext">Add your first task above to get started</div>
             </div>
             
-            <!-- Loading State (optional) -->
+          
             <div id="loading-state" class="loading-state" style="display: none;">
                 <span class="loading-icon">⏳</span>
                 <div class="loading-text">Loading your tasks...</div>
@@ -117,7 +117,7 @@
             </div>
         </section>
         
-        <!-- Quick Actions Section (optional) -->
+       
         <section class="quick-actions-section" style="margin-top: 20px;">
             <div class="quick-actions-container">
                 <button class="quick-action-btn" id="select-all-btn">
@@ -133,7 +133,7 @@
         </section>
     </div>
     
-    <!-- Task Template (hidden, used by JavaScript) -->
+  
     <template id="task-template">
         <li class="task-item" data-task-id="">
             <div class="task-content">
