@@ -1,141 +1,29 @@
-/* Header Component Styles - header/header.css */
-
 .header-container {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 229, 236, 0.95); /* light peach */
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.header-content {
-    text-align: center;
-    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(255, 179, 191, 0.3); /* pinkish shadow */
+    border: 1px solid rgba(255, 192, 203, 0.4);
 }
 
 .app-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #2d3748;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.title-icon {
-    font-size: 2.2rem;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
+    color: #6D3D47; /* dark mauve */
 }
 
 .app-subtitle {
-    font-size: 1.1rem;
-    color: #718096;
-    font-weight: 400;
-}
-
-.header-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    color: #A05A66;
 }
 
 .stat-item {
-    text-align: center;
-    padding: 15px 20px;
-    background: linear-gradient(145deg, #f7fafc, #edf2f7);
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    min-width: 80px;
-}
-
-.stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #FFD6D6, #FFEEF1); /* light pink gradient */
 }
 
 .stat-number {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #4299e1;
-    margin-bottom: 5px;
+    color: #FF8FAB; /* highlight number */
 }
 
 .stat-label {
-    font-size: 0.9rem;
-    color: #718096;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-/* Responsive Design for Header */
-@media (max-width: 768px) {
-    .header-container {
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .app-title {
-        font-size: 2rem;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .title-icon {
-        font-size: 1.8rem;
-    }
-    
-    .app-subtitle {
-        font-size: 1rem;
-    }
-    
-    .header-stats {
-        gap: 20px;
-    }
-    
-    .stat-item {
-        padding: 12px 15px;
-        min-width: 70px;
-    }
-    
-    .stat-number {
-        font-size: 1.5rem;
-    }
-    
-    .stat-label {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .app-title {
-        font-size: 1.8rem;
-    }
-    
-    .header-stats {
-        gap: 15px;
-    }
-    
-    .stat-item {
-        padding: 10px 12px;
-    }
+    color: #A05A66;
 }
