@@ -13,7 +13,7 @@ function loadHeader() {
                     <span class="title-icon">✅</span>
                       To Do List App
                 </h1>
-                <p class="app-subtitle">Your Your Personal Task Manager</p>
+                <p class="app-subtitle">Your Personal Task Manager</p>
             </div>
             <div class="header-stats">
                 <div class="stat-item">
