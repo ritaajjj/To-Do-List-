@@ -11,9 +11,9 @@ function loadHeader() {
             <div class="header-content">
                 <h1 class="app-title">
                     <span class="title-icon">✅</span>
-                    TaskMaster Pro
+                      To Do List App
                 </h1>
-                <p class="app-subtitle">Your Professional Task Management Solution</p>
+                <p class="app-subtitle">Your Your Personal Task Manager</p>
             </div>
             <div class="header-stats">
                 <div class="stat-item">

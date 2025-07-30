@@ -1,13 +1,13 @@
-/* Header Component Styles - header/header.css */
+
 
 .header-container {
-    background: rgba(234, 157, 157, 0.95);
+    background: rgba(245, 185, 185, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(234, 192, 192, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(237, 199, 199, 0.1);
+    border: 1px solid rgba(238, 209, 209, 0.2);
 }
 
 .header-content {
@@ -18,7 +18,7 @@
 .app-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #a56572;
+    color: #2d3748;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
 
 .app-subtitle {
     font-size: 1.1rem;
-    color: #ecacd9;
+    color: #718096;
     font-weight: 400;
 }
 
@@ -61,27 +61,27 @@
     padding: 15px 20px;
     background: linear-gradient(145deg, #f7fafc, #edf2f7);
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(228, 218, 218, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     min-width: 80px;
 }
 
 .stat-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(179, 163, 163, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .stat-number {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    color: #0a4678;
+    color: #4299e1;
     margin-bottom: 5px;
 }
 
 .stat-label {
     font-size: 0.9rem;
-    color: #83a1cf;
+    color: #718096;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
