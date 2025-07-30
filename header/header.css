@@ -1,13 +1,13 @@
 
 
 .header-container {
-    background: rgba(245, 185, 185, 0.95);
+    background: #FFE5EC;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: 0 10px 30px rgba(237, 199, 199, 0.1);
-    border: 1px solid rgba(238, 209, 209, 0.2);
+    border: 1px solid rgba(238, 179, 179, 0.2);
 }
 
 .header-content {
@@ -18,7 +18,7 @@
 .app-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2d3748;
+    color: #FB6F92;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
 
 .app-subtitle {
     font-size: 1.1rem;
-    color: #718096;
+    color: #FB6F92;
     font-weight: 400;
 }
 
@@ -75,7 +75,7 @@
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    color: #4299e1;
+    color: #e3ec92;
     margin-bottom: 5px;
 }
 

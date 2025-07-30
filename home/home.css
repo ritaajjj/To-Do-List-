@@ -1,7 +1,7 @@
 
 .main-container {
     flex: 1;
-    background: rgba(255, 255, 255, 0.95);
+    background: #FFC2D1;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 30px;
@@ -16,7 +16,7 @@
     padding: 25px;
     background: linear-gradient(145deg, #f7fafc, #edf2f7);
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(235, 217, 217, 0.05);
+    box-shadow: 0 4px 15px rgba(241, 215, 215, 0.05);
 }
 
 .input-group {
@@ -38,12 +38,12 @@
 .task-input:focus {
     outline: none;
     border-color: #f5dc87;
-    box-shadow: 0 0 0 3px rgba(240, 208, 149, 0.1);
+    box-shadow: 0 0 0 3px #FFB3C6;
 }
 
 .add-btn {
     padding: 15px 25px;
-    background: linear-gradient(145deg, #4299e1, #3182ce);
+    background: linear-gradient(#FB6F92);
     color: white;
     border: none;
     border-radius: 10px;
@@ -74,7 +74,7 @@
 .filter-btn {
     padding: 10px 20px;
     border: 2px solid #e2e8f0;
-    background: white;
+    background:#FFB3C6;
     color: #4a5568;
     border-radius: 8px;
     cursor: pointer;
@@ -84,13 +84,13 @@
 
 .filter-btn:hover {
     border-color: #9f6b82;
-    color: #4299e1;
+    color: #ec81b3;
 }
 
 .filter-btn.active {
-    background: #4299e1;
+    background: #47abab;
     color: white;
-    border-color: #4299e1;
+    border-color: #77e4e7;
 }
 
 /* Task List Section */

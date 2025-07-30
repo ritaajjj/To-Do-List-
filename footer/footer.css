@@ -1,10 +1,10 @@
 
 .footer-container {
-    background: rgba(255, 255, 255, 0.95);
+    background: #FFB3C6;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 25px 30px;
-    box-shadow: 0 10px 30px rgba(198, 129, 129, 0.1);
+    box-shadow: 0 10px 30px rgba(233, 185, 185, 0.1);
     border: 1px solid rgba(162, 108, 108, 0.2);
     margin-top: auto;
 }
